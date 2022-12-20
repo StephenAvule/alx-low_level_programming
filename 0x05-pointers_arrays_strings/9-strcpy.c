@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _strcpy - copiar el contenido de uno a otra variable
+ * _strcpy - Function that copiers the string pointed to by src including the
+ * terminating null byte
  * @dest: This is destiny
- * @src: This is the copia
+ * @src: Thisis the copier
  *
- * Return: this return copy
+ * Return: This return copy
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *star = dest;
+	char *start = dest;
 
 	while (*src != '\0')
 	{
@@ -20,3 +21,4 @@ char *_strcpy(char *dest, char *src)
 	*dest = '\0';
 	return (start);
 }
+
